@@ -1,17 +1,14 @@
+
 import CardContainer from "./components/CardContainer"
 import Header from "./components/Header"
+import Container from "react-bootstrap/Container"
 import "bootstrap/dist/css/bootstrap.min.css";
-import {data} from "./helper/data"
-import "./components/css/cardContainer.css"
-
-
-
 const App = () => {
   return (
-    <div className="bg-danger arka">
-    <Header/>
-      <CardContainer data={data}/>
-    </div>
+    <Container className="text-center mt-4">
+      <Header/>
+      <CardContainer/>
+    </Container>
   )
 }
 
